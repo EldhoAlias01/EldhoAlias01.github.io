@@ -1,1 +1,302 @@
 # EldhoAlias01.github.io
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldho Alias - Software Developer Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9fafc;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #fffae6;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav {
+            background-color: #0b3d91;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #0b3d91;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0b3d91;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 15px;
+        }
+
+        #summary {
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        #summary p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 10px auto;
+        }
+
+        #education p, #skills ul {
+            margin-left: 10px;
+        }
+
+        #skills ul {
+            list-style-type: square;
+            margin-top: 10px;
+        }
+
+        .my_project {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 12px;
+        }
+
+        .my_project:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3); 
+        }
+
+        .my_project:hover .card-title {
+        color: #a5b4fc; 
+        }
+
+
+        /* Resume */
+        #resume a {
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #resume a:hover {
+            text-decoration: underline;
+        }
+
+
+        #contact p {
+            margin: 8px 0;
+        }
+
+        #contact a {
+            color: #0b3d91;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            color: #ffcc00;
+        }
+
+        footer {
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 8px 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                margin: 30px auto;
+            }
+
+            #projects article {
+                padding: 15px;
+            }
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+  
+    <header class="bg-warning text-dark text-center py-2">
+        <p><strong>Note:</strong> This website was created temporarily for an academic assignment.</p>
+    </header>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#summary">Eldho Alias</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="summary" class="container text-center my-5">
+        <h1 class="display-4 text-primary fw-bold">Eldho Alias</h1>
+        <h2 class="h4 text-secondary mb-3">Software Developer</h2>
+        <p class="lead">
+            As a software developer, I thrive on transforming ideas into functional and elegant software. I enjoy tackling challenging problems, optimizing workflows, and building applications that are both reliable and intuitive. My focus is on producing high-quality, well-tested solutions that make a real impact.
+        </p>
+    </section>
+
+    
+    <section id="education" class="container my-5">
+        <h2 class="text-primary border-bottom pb-2">Education</h2>
+        <h4>Diploma in Computer Systems Technician - Software Support</h4>
+        <p>Mohawk College, Hamilton, ON — <em>Expected Graduation: April 2026</em></p>
+    </section>
+
+    
+    <section id="skills" class="container my-5">
+        <h2 class="text-primary border-bottom pb-2">Technical Skills</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Languages: Java, C#, Python, C++, JavaScript, PHP</li>
+            <li class="list-group-item">Web: HTML5, CSS3, React.js, Node.js, jQuery</li>
+            <li class="list-group-item">Databases: MySQL, SQL Server</li>
+            <li class="list-group-item">Tools: Visual Studio, IntelliJ, Git, GitHub</li>
+            <li class="list-group-item">OS: Windows, macOS, Linux</li>
+        </ul>
+    </section>
+
+    
+    <section id="projects" class="container my-5">
+        <h2 class="text-primary border-bottom pb-2">Projects</h2>
+        <div class="row g-4 mt-3">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm my_project">
+                    <div class="card-body">
+                        <h5 class="card-title">Whack-a-Mole Game</h5>
+                        <p class="card-text">Interactive browser game using HTML, CSS, and JS to demonstrate event handling and DOM manipulation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm my_project">
+                    <div class="card-body">
+                        <h5 class="card-title">Vending Machine (Java)</h5>
+                        <p class="card-text">Console simulation demonstrating OOP concepts, user input, and data validation in Java.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm my_project">
+                    <div class="card-body">
+                        <h5 class="card-title">Flappy Bird (Unity)</h5>
+                        <p class="card-text">Unity recreation of the classic game with scoring system, physics, and UI elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="resume" class="container my-5 text-center">
+        <h2 class="text-primary border-bottom pb-2">Resume</h2>
+        <p class="mt-3">You can <a href="IT-resume.pdf" class="btn btn-outline-primary" target="_blank">View / Download Resume</a></p>
+    </section>
+
+ 
+    <section id="contact" class="container my-5">
+        <h2 class="text-primary border-bottom pb-2">Contact</h2>
+        <p>Email: <a href="mailto:eldho.alias@mohawkcollege.com">eldho.alias@mohawkcollege.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/eldhoalias01" target="_blank">linkedin.com/in/eldhoalias01</a></p>
+        <p>GitHub: <a href="https://github.com/EldhoAlias01" target="_blank">github.com/EldhoAlias01</a></p>
+    </section>
+
+  
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 Eldho Alias. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
