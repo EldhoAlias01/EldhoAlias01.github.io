@@ -1,5 +1,12 @@
 # EldhoAlias01.github.io
 
+ <!-- 
+        Project: Software Developer Portfolio
+        Purpose: A personal portfolio website created for an academic assignment.
+        Description:
+          - Displays professional summary, education, skills, projects, resume, and contact details.
+          - Styled using Bootstrap and custom CSS for a clean, responsive design.
+    -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +27,7 @@
         body {
             font-family: "Segoe UI", Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f9fafc;
+              background-color: #f9fafc;
             color: #333;
             scroll-behavior: smooth;
         }
@@ -109,6 +116,58 @@
             list-style-type: square;
             margin-top: 10px;
         }
+        
+        footer {
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 8px 0;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            section {
+                margin: 30px auto;
+            }
+            #projects article {
+                padding: 15px;
+            }
+        }
+
+
+        #resume a {
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #resume a:hover {
+            text-decoration: underline;
+        }
+
+        #contact p {
+            margin: 8px 0;
+        }
+
+        #contact a {
+            color: #0b3d91;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            color: #ffcc00;
+        }
 
         .my_project {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -124,65 +183,6 @@
         color: #a5b4fc; 
         }
 
-
-        /* Resume */
-        #resume a {
-            color: #0b3d91;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        #resume a:hover {
-            text-decoration: underline;
-        }
-
-
-        #contact p {
-            margin: 8px 0;
-        }
-
-        #contact a {
-            color: #0b3d91;
-            text-decoration: none;
-        }
-
-        #contact a:hover {
-            color: #ffcc00;
-        }
-
-        footer {
-            background-color: #0b3d91;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav ul li {
-                margin: 8px 0;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            section {
-                margin: 30px auto;
-            }
-
-            #projects article {
-                padding: 15px;
-            }
-
-
-        }
 
     </style>
 
@@ -297,6 +297,5 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 
 </html>
